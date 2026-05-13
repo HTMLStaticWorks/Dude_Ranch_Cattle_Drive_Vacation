@@ -1,0 +1,51 @@
+/* 
+    Dude Ranch & Cattle Drive Vacation - RTL Support
+*/
+
+[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+
+[dir="rtl"] .navbar-custom {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-links {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-actions {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .hero-btns {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .footer-top {
+    text-align: right;
+}
+
+[dir="rtl"] .footer-links a:hover {
+    padding-left: 0;
+    padding-right: 5px;
+}
+
+[dir="rtl"] .story-row:nth-child(even) {
+    flex-direction: row;
+}
+
+[dir="rtl"] .story-row {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .mobile-menu {
+    right: auto;
+    left: -100%;
+}
+
+[dir="rtl"] .mobile-menu.active {
+    right: auto;
+    left: 0;
+}

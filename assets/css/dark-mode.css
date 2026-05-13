@@ -1,0 +1,114 @@
+/* 
+    Dude Ranch & Cattle Drive Vacation - Warm Luxury Dark Mode
+*/
+
+[data-theme="dark"] {
+    --primary-bg: #1a1512;
+    --secondary-bg: #241d18;
+    --card-bg: #2a221c;
+    --text-main: #f6efe4;
+    --text-muted: #eadcc6;
+    --border-color: rgba(234, 220, 198, 0.1);
+    --glass-bg: rgba(26, 21, 18, 0.8);
+}
+
+[data-theme="dark"] .hero-title {
+    color: var(--text-main);
+}
+
+[data-theme="dark"] .editorial-hero {
+    background: var(--primary-bg);
+}
+
+[data-theme="dark"] .text-muted, [data-theme="dark"] .lead {
+    color: var(--text-muted) !important;
+}
+
+[data-theme="dark"] .navbar-custom.scrolled {
+    background: var(--primary-bg);
+}
+
+[data-theme="dark"] .btn-outline-ranch {
+    border-color: var(--dusty-clay);
+    color: var(--dusty-clay);
+}
+
+[data-theme="dark"] .btn-outline-ranch:hover {
+    background: var(--dusty-clay);
+    color: #fff;
+}
+
+[data-theme="dark"] .ranch-card {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .social-icon {
+    background: var(--secondary-bg);
+    color: var(--sunset-gold);
+}
+
+[data-theme="dark"] .social-icon:hover {
+    background: var(--sunset-gold);
+    color: var(--primary-bg);
+}
+
+[data-theme="dark"] .mobile-menu {
+    background: var(--primary-bg);
+}
+
+[data-theme="dark"] .footer-bottom {
+    border-top: 1px solid rgba(234, 220, 198, 0.1);
+}
+
+[data-theme="dark"] .testimonial-card {
+    background-color: var(--secondary-bg) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-main);
+}
+
+[data-theme="dark"] .testimonial-card .text-muted {
+    color: var(--text-muted) !important;
+}
+
+[data-theme="dark"] .assessment-text-side {
+    background-color: var(--secondary-bg) !important;
+    color: var(--text-main);
+}
+
+[data-theme="dark"] .journey-section {
+    background-color: var(--primary-bg) !important;
+}
+
+[data-theme="dark"] .timeline-card {
+    background-color: var(--secondary-bg) !important;
+    color: var(--text-main);
+}
+
+[data-theme="dark"] .contact-main-card {
+    background-color: var(--primary-bg) !important;
+}
+
+[data-theme="dark"] .social-btn-ranch {
+    background-color: rgba(255,255,255,0.1) !important;
+    color: #fff !important;
+}
+
+[data-theme="dark"] .form-control {
+    background: rgba(255,255,255,0.05);
+    border-color: rgba(255,255,255,0.1);
+    color: #fff;
+}
+
+[data-theme="dark"] .form-control:focus {
+    background: rgba(255,255,255,0.1);
+    border-color: var(--burnt-sienna);
+    color: #fff;
+}
+
+[data-theme="dark"] .form-label {
+    color: var(--text-muted);
+}
+
+[data-theme="dark"] .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}

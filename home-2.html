@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ranch Experience | Editorial Western Journey</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+    
+    <style>
+        .editorial-hero {
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            background: var(--secondary-bg);
+            padding-top: 100px;
+        }
+        .hero-split {
+            display: flex;
+            height: 100%;
+            width: 100%;
+        }
+        .hero-text-side {
+            flex: 1;
+            padding: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .hero-img-side {
+            flex: 1.2;
+            position: relative;
+            overflow: hidden;
+            border-radius: 40px 0 0 40px;
+        }
+        .hero-img-side img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .asymmetric-section {
+            padding: 120px 0;
+        }
+        .layer-img-group {
+            position: relative;
+            height: 600px;
+        }
+        .img-layer-1 {
+            width: 80%;
+            height: 500px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .img-layer-2 {
+            width: 50%;
+            height: 350px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 2;
+            border: 15px solid var(--primary-bg);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        
+        @media (max-width: 992px) {
+            .editorial-hero { height: auto; padding-top: 150px; }
+            .hero-split { flex-direction: column; }
+            .hero-text-side { padding: 40px; }
+            .hero-img-side { height: 400px; border-radius: 0; }
+            .layer-img-group { height: 450px; margin-bottom: 40px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar-custom">
+        <div class="nav-logo">
+            <i class="bi bi-compass"></i>
+            <span>WildWest Ranch</span>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="home-2.html" class="nav-link active">Home 2</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="ranch-experiences.html" class="nav-link">Experiences</a></li>
+            <li><a href="meal-plans.html" class="nav-link">Meal Plans</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        
+        <div class="nav-actions">
+            <button id="theme-toggle" class="btn btn-outline-ranch p-2 rounded-circle">
+                <i class="bi bi-moon-stars"></i>
+            </button>
+            <button id="rtl-toggle" class="btn btn-outline-ranch p-2 rounded-circle">
+                <i class="bi bi-translate"></i>
+            </button>
+            <a href="booking.html" class="btn-ranch btn-outline-ranch d-none d-md-flex">Book Now</a>
+            <a href="login.html" class="btn-ranch btn-primary-ranch d-none d-md-flex">Login</a>
+            <button class="mobile-nav-btn"><i class="bi bi-list"></i></button>
+        </div>
+    </nav>
+
+    <!-- Editorial Hero -->
+    <header class="editorial-hero">
+        <div class="hero-split">
+            <div class="hero-text-side text-center text-lg-start align-items-center align-items-lg-start">
+                <span class="section-tag">A New Frontier</span>
+                <h1 class="hero-title">The Art of Western Living</h1>
+                <p class="mt-4 lead text-muted">A cinematic journey into the heart of Montana's wilderness. Where luxury meets the rugged spirit of the frontier.</p>
+                <div class="mt-5 d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start">
+                    <a href="#" class="btn-ranch btn-primary-ranch">Discover the Journey</a>
+                    <a href="#" class="btn-ranch btn-outline-ranch">View Heritage Video</a>
+                </div>
+            </div>
+            <div class="hero-img-side">
+                <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&q=80&w=1500" alt="Editorial Ranch">
+            </div>
+        </div>
+    </header>
+
+    <!-- Section 1: Cattle Drive Journey -->
+    <section class="asymmetric-section">
+        <div class="container-custom">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7">
+                    <div class="layer-img-group">
+                        <div class="img-layer-1">
+                            <img src="https://api.swanlandco.com/app/uploads/2025/04/V-KROW3778-1024x683.jpg" alt="Adventure Plains" class="w-100 h-100">
+                        </div>
+                        <div class="img-layer-2">
+                            <img src="https://www.sheridanwyoming.org/wp-content/uploads/2021/04/50264133973_d5baa81c44_k-scaled-1266x1266.jpg" alt="Mountain Vista" class="w-100 h-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center text-lg-start">
+                    <span class="section-tag">Authentic Adventure</span>
+                    <h2 class="section-title">The Cattle Drive Journey</h2>
+                    <p class="mt-4 text-muted">Join our annual migration across the High Plains. This isn't a show—it's a real, working ranch experience where you become part of the heritage.</p>
+                    <div class="mt-5">
+                        <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start gap-4 mb-4">
+                            <div class="western-font h1 text-muted opacity-25">01</div>
+                            <div>
+                                <h5 class="fw-bold">Morning Muster</h5>
+                                <p class="small text-muted mb-0">Prepare the herd at daybreak under golden skies.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start gap-4">
+                            <div class="western-font h1 text-muted opacity-25">02</div>
+                            <div>
+                                <h5 class="fw-bold">High Plains Navigation</h5>
+                                <p class="small text-muted mb-0">Cross the Big Sky country with veteran cowboys.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Riding Skill Assessments -->
+    <section class="section-padding" style="background: var(--primary-bg);">
+        <div class="container-custom">
+            <div class="row g-0 rounded-5 overflow-hidden shadow-lg">
+                <div class="col-lg-6 assessment-text-side p-5 d-flex flex-column justify-content-center text-center text-lg-start align-items-center align-items-lg-start">
+                    <span class="section-tag">Safety & Mastery</span>
+                    <h2 class="section-title">Riding Skill Assessments</h2>
+                    <p class="mt-4 text-muted">Before we hit the trails, we ensure you and your horse are the perfect pair. Our experts guide you through basic to advanced horsemanship.</p>
+                    <a href="ranch-experiences.html" class="btn-ranch btn-outline-ranch mt-4 w-fit mx-auto mx-lg-0">Explore Riding</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://w0.peakpx.com/wallpaper/792/369/HD-wallpaper-where-in-the-world-lifestyle-culture-landscapes-cityscapes-wildlife-travel-a-nihang-sikh-warrior-shows-his-riding-skills-during-the-horse-games-at-the-annual-holla-mohalla-tours-sikh.jpg" alt="Skill Assessment" class="w-100 h-100 object-fit-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Family Ranch Activities -->
+    <section class="section-padding">
+        <div class="container-custom">
+            <div class="text-center mb-5">
+                <span class="section-tag">Generational Memories</span>
+                <h2 class="section-title">Family Ranch Activities</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="ranch-card border-0 bg-transparent text-center">
+                        <div class="mb-4 overflow-hidden rounded-circle mx-auto shadow-lg" style="width: 250px; height: 250px;">
+                            <img src="https://media.istockphoto.com/id/543565700/photo/little-archer-with-bow-and-arrow.jpg?s=612x612&w=0&k=20&c=zSQu1qUsGjlQ0qxE-DRp6RBPgbG0DdwnDSLvXsx-abw=" alt="Archery" class="w-100 h-100">
+                        </div>
+                        <h4 class="western-font">Youth Archery</h4>
+                        <p class="text-muted small">Professional instruction for young pioneers.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="ranch-card border-0 bg-transparent text-center">
+                        <div class="mb-4 overflow-hidden rounded-circle mx-auto shadow-lg" style="width: 250px; height: 250px;">
+                            <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&q=80&w=600" alt="Fishing" class="w-100 h-100">
+                        </div>
+                        <h4 class="western-font">Fly Fishing</h4>
+                        <p class="text-muted small">Guided creek sessions for all ages.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="ranch-card border-0 bg-transparent text-center">
+                        <div class="mb-4 overflow-hidden rounded-circle mx-auto shadow-lg" style="width: 250px; height: 250px;">
+                            <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80&w=600" alt="Lasso" class="w-100 h-100">
+                        </div>
+                        <h4 class="western-font">Lasso Training</h4>
+                        <p class="text-muted small">Master the iconic cowboy skill.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Luxury Cabin Experiences -->
+    <section class="section-padding" style="background: var(--secondary-bg);">
+        <div class="container-custom">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="ranch-card p-0 overflow-hidden border-0 shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1200" alt="Cabin View" class="w-100 h-100">
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="ps-lg-5 d-flex flex-column align-items-center align-items-lg-start">
+                        <span class="section-tag">Refined Comfort</span>
+                        <h2 class="section-title mb-4">Wilderness Sanctuaries</h2>
+                        <p class="lead text-muted mb-5">Our cabins are more than just a place to sleep. They are curated retreats featuring reclaimed timber, custom leather furnishings, and private decks overlooking the Pintler Mountains.</p>
+                        <div class="row g-4">
+                            <div class="col-sm-6">
+                                <h5 class="western-font mb-3"><i class="bi bi-droplet text-primary me-2"></i> Private Spa Bath</h5>
+                                <p class="small text-muted">Soak in copper tubs after a day on the trail.</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <h5 class="western-font mb-3"><i class="bi bi-brightness-high text-warning me-2"></i> Star View Lofts</h5>
+                                <p class="small text-muted">Skylights designed for celestial observation.</p>
+                            </div>
+                        </div>
+                        <a href="gallery.html" class="btn-ranch btn-primary-ranch mt-5 mx-auto mx-lg-0">View Gallery</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Wilderness Adventure Testimonials -->
+    <section class="section-padding">
+        <div class="container-custom">
+            <div class="bg-dark text-white p-5 p-lg-10 rounded-5 text-center position-relative overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=2000" alt="Stars" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover opacity-25">
+                <div class="position-relative z-1">
+                    <span class="section-tag" style="color: var(--sunset-gold);">Voice of the Wild</span>
+                    <h2 class="section-title text-white mb-5">Unforgettable Moments</h2>
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <p class="fs-3 serif-italic">"The silence of the mountain at dawn, broken only by the rhythmic breath of my horse, changed my perspective on everything."</p>
+                                <h5 class="mt-4">— Robert Chen, Architectural Designer</h5>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="fs-3 serif-italic">"We came as tourists and left as part of the ranch family. The authenticity here is unmatched by any resort."</p>
+                                <h5 class="mt-4">— Elena Rodriguez, Travel Photographer</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Shared) -->
+    <footer id="footer-placeholder"></footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

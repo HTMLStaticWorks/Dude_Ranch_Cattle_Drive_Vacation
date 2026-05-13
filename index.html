@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dude Ranch & Cattle Drive | Luxury Western Adventure</title>
+    <meta name="description" content="Experience authentic luxury western ranch vacations, guided cattle drives, and horseback adventures in the heart of the wilderness.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar-custom">
+        <div class="nav-logo">
+            <i class="bi bi-compass"></i>
+            <span>WildWest Ranch</span>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="home-2.html" class="nav-link">Home 2</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="ranch-experiences.html" class="nav-link">Experiences</a></li>
+            <li><a href="meal-plans.html" class="nav-link">Meal Plans</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        
+        <div class="nav-actions">
+            <button id="theme-toggle" class="btn btn-outline-ranch p-2 rounded-circle" title="Toggle Theme">
+                <i class="bi bi-moon-stars"></i>
+            </button>
+            <button id="rtl-toggle" class="btn btn-outline-ranch p-2 rounded-circle" title="Toggle RTL">
+                <i class="bi bi-translate"></i>
+            </button>
+            <a href="booking.html" class="btn-ranch btn-outline-ranch d-none d-md-flex">Book Now</a>
+            <a href="login.html" class="btn-ranch btn-primary-ranch d-none d-md-flex">Login</a>
+            <button class="mobile-nav-btn"><i class="bi bi-list"></i></button>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1518467166778-b88f373ffec7?auto=format&fit=crop&q=80&w=2000" alt="Western Ranch Sunset">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="dust-overlay"></div>
+        
+        <div class="hero-content container">
+            <span class="hero-sub">Est. 1892 • Premium Western Heritage</span>
+            <h1 class="hero-title">Live the Spirit of the Wild West</h1>
+            <p class="hero-desc">Experience authentic cattle drives, horseback adventures, luxury bunkhouse stays, and unforgettable western hospitality in the heart of Montana.</p>
+            <div class="hero-btns">
+                <a href="ranch-experiences.html" class="btn-ranch btn-primary-ranch px-5 py-3">Explore Packages</a>
+                <a href="booking.html" class="btn-ranch btn-outline-ranch px-5 py-3 text-white border-white">Book Your Adventure</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section 1: Weekly Ranch Packages -->
+    <section class="section-padding">
+        <div class="container-custom">
+            <div class="section-header text-center mx-auto">
+                <span class="section-tag">Adventure Awaits</span>
+                <h2 class="section-title">Weekly Ranch Packages</h2>
+                <p class="mt-3 text-muted">Choose your path through the wilderness with our curated weekly experiences designed for every level of adventurer.</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Package 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="ranch-card">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1551884831-bbf3cdc6469e?auto=format&fit=crop&q=80&w=800" alt="Cattle Drive">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span><i class="bi bi-clock"></i> 7 Days</span>
+                                <span><i class="bi bi-star-fill text-warning"></i> Intermediate</span>
+                            </div>
+                            <h3 class="card-title">The Grand Cattle Drive</h3>
+                            <p class="text-muted">An authentic cowboy experience moving herds across open plains. Includes trail meals and wilderness camps.</p>
+                            <a href="ranch-experiences.html" class="btn-ranch btn-outline-ranch mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="ranch-card">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&q=80&w=800" alt="Mountain Ride">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span><i class="bi bi-clock"></i> 5 Days</span>
+                                <span><i class="bi bi-star-fill text-warning"></i> Beginner Friendly</span>
+                            </div>
+                            <h3 class="card-title">Mountain Ridge Retreat</h3>
+                            <p class="text-muted">Scenic trail rides through majestic peaks and alpine lakes. Perfect for families seeking peace and beauty.</p>
+                            <a href="ranch-experiences.html" class="btn-ranch btn-outline-ranch mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="ranch-card">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80&w=800" alt="Ranch Skills">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span><i class="bi bi-clock"></i> 6 Days</span>
+                                <span><i class="bi bi-star-fill text-warning"></i> All Levels</span>
+                            </div>
+                            <h3 class="card-title">Heritage Ranch Skills</h3>
+                            <p class="text-muted">Master the art of roping, horsemanship, and ranch management under the guidance of veteran cowboys.</p>
+                            <a href="ranch-experiences.html" class="btn-ranch btn-outline-ranch mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Horseback Riding Experiences -->
+    <section class="section-padding" style="background: var(--secondary-bg);">
+        <div class="container-custom">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="story-img">
+                        <img src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&q=80&w=1200" alt="Horseback Riding">
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-start">
+                    <span class="section-tag">Into the Wild</span>
+                    <h2 class="section-title">Horseback Riding Experiences</h2>
+                    <p class="mt-4 lead serif-italic">"The air of heaven is that which blows between a horse's ears."</p>
+                    <p class="mt-3 text-muted">Our stables house over 150 well-trained horses, matched to your skill level. From gentle meadow walks to challenging ridge climbs, our guided trail rides offer a perspective of the wilderness that only a saddle can provide.</p>
+                    <ul class="mt-4 list-unstyled">
+                        <li class="mb-3 d-flex align-items-center justify-content-center justify-content-lg-start gap-3">
+                            <i class="bi bi-check2-circle text-success fs-4"></i>
+                            <span>Sunset Prairie Rides & Campfire Coffee</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center justify-content-center justify-content-lg-start gap-3">
+                            <i class="bi bi-check2-circle text-success fs-4"></i>
+                            <span>Advanced Creek Crossing & Trail Mastery</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center justify-content-center justify-content-lg-start gap-3">
+                            <i class="bi bi-check2-circle text-success fs-4"></i>
+                            <span>Private Guide Sessions for Experienced Riders</span>
+                        </li>
+                    </ul>
+                    <a href="ranch-experiences.html" class="btn-ranch btn-primary-ranch mt-4">Explore Experiences</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Cowboy Bunkhouse Showcase -->
+    <section class="section-padding">
+        <div class="container-custom">
+            <div class="section-header text-center mx-auto">
+                <span class="section-tag">Rustic Luxury</span>
+                <h2 class="section-title">Cowboy Bunkhouse Showcase</h2>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="ranch-card" style="height: 600px; position: relative;">
+                        <img src="https://images.unsplash.com/photo-1544984243-ec57ea16fe25?auto=format&fit=crop&q=80&w=1200" alt="Luxury Lodge" class="w-100 h-100 object-fit-cover">
+                        <div class="position-absolute bottom-0 start-0 p-5 w-100 text-white text-center text-lg-start" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                            <h3 class="western-font h2">The Heritage Lodge</h3>
+                            <p>Our premier guest suite featuring a grand stone fireplace and panoramic mountain views.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex flex-column gap-4 h-100">
+                        <div class="ranch-card flex-grow-1">
+                            <div class="card-img-wrapper" style="height: 200px;">
+                                <img src="https://images.unsplash.com/photo-1598228723793-52759bba239c?auto=format&fit=crop&q=80&w=600" alt="Cozy Cabin">
+                            </div>
+                            <div class="card-content py-3 text-center text-lg-start">
+                                <h4 class="western-font">Aspen Cabins</h4>
+                                <p class="text-muted small">Private retreat for couples.</p>
+                            </div>
+                        </div>
+                        <div class="ranch-card flex-grow-1">
+                            <div class="card-img-wrapper" style="height: 200px;">
+                                <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&q=80&w=600" alt="Bunkhouse">
+                            </div>
+                            <div class="card-content py-3 text-center text-lg-start">
+                                <h4 class="western-font">The Wrangler Bunkhouse</h4>
+                                <p class="text-muted small">Authentic communal experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Ranch Meal Plan Experience -->
+    <section class="section-padding" style="background: #2f241d; color: #fff;">
+        <div class="container-custom">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 order-lg-2">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=1000" alt="BBQ" class="rounded-5 shadow-lg w-100" style="height: 550px; object-fit: cover;">
+                </div>
+                <div class="col-lg-6 order-lg-1 text-center text-lg-start">
+                    <span class="section-tag" style="color: var(--sunset-gold);">Western Flavors</span>
+                    <h2 class="section-title text-white">Ranch Meal Plan Experience</h2>
+                    <p class="mt-4 text-white-50">Nothing beats the taste of a Dutch oven cobbler or a wood-fired steak after a long day in the saddle. Our culinary team brings gourmet refinement to traditional ranch fare.</p>
+                    
+                    <div class="mt-5 d-grid gap-4">
+                        <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start gap-4">
+                            <div class="fs-1 text-warning"><i class="bi bi-egg-fried"></i></div>
+                            <div>
+                                <h4 class="western-font">The Wrangler Breakfast</h4>
+                                <p class="text-white-50">Hearty sourdough biscuits, farm-fresh eggs, and campfire coffee to start your day.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start gap-4">
+                            <div class="fs-1 text-warning"><i class="bi bi-fire"></i></div>
+                            <div>
+                                <h4 class="western-font">Prairie BBQ Nights</h4>
+                                <p class="text-white-50">Open-fire grilling featuring local grass-fed beef and seasonal organic harvest.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="meal-plans.html" class="btn-ranch btn-primary-ranch mt-5 mx-auto mx-lg-0" style="background: var(--sunset-gold); color: #000;">Explore Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Guest Adventure Stories -->
+    <section class="section-padding">
+        <div class="container-custom">
+            <div class="section-header text-center mx-auto">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">Guest Adventure Stories</h2>
+            </div>
+            
+            <div class="row g-4 d-flex align-items-stretch">
+                <div class="col-md-6">
+                    <div class="testimonial-card h-100 p-5 rounded-5 border bg-white shadow-sm position-relative">
+                        <i class="bi bi-quote fs-1 position-absolute top-0 start-0 m-4 opacity-25"></i>
+                        <p class="serif-italic fs-5 mb-4">"The cattle drive was the most challenging and rewarding experience of my life. Seeing the sunset over the valley with the herd moving below is a memory I'll cherish forever."</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="https://i.pravatar.cc/60?u=1" alt="Guest" class="rounded-circle">
+                            <div>
+                                <h5 class="mb-0">James Morrison</h5>
+                                <span class="text-muted small">Denver, Colorado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial-card h-100 p-5 rounded-5 border bg-white shadow-sm position-relative">
+                        <i class="bi bi-quote fs-1 position-absolute top-0 start-0 m-4 opacity-25"></i>
+                        <p class="serif-italic fs-5 mb-4">"Luxury meets the wild west perfectly here. The cabins are incredibly comfortable, and the staff treated us like family person. My kids loved every second of the trail rides."</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="https://i.pravatar.cc/60?u=2" alt="Guest" class="rounded-circle">
+                            <div>
+                                <h5 class="mb-0">Sarah Jenkins</h5>
+                                <span class="text-muted small">London, UK</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-custom">
+            <div class="footer-top">
+                <div>
+                    <div class="footer-logo western-font">
+                        <i class="bi bi-compass"></i> WildWest Ranch
+                    </div>
+                    <p class="footer-desc">Authentic western luxury since 1892. Preserving the heritage of the American West through immersive ranch experiences.</p>
+                    <div class="social-links mt-4">
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-h western-font">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="ranch-experiences.html">Experiences</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-h western-font">Activities</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Cattle Drives</a></li>
+                        <li><a href="#">Horseback Riding</a></li>
+                        <li><a href="#">Fly Fishing</a></li>
+                        <li><a href="#">Archery</a></li>
+                        <li><a href="#">Guided Trails</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-h western-font">Newsletter</h4>
+                    <p class="small text-muted mb-3">Get the latest ranch news and seasonal offers.</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control bg-transparent border-secondary" placeholder="Email Address">
+                        <button class="btn btn-primary-ranch px-3" type="button"><i class="bi bi-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 WildWest Ranch & Cattle Drive. All Rights Reserved.</p>
+                <div class="d-flex gap-4">
+                    <a href="#">Privacy Policy</a>
+                    <a href="liability-form.html">Liability Waiver</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
