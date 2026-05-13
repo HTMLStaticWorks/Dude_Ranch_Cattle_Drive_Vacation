@@ -3,8 +3,11 @@
 */
 
 document.addEventListener('DOMContentLoaded', () => {
-    let currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    if (currentPage === '') currentPage = 'index.html';
+    const path = window.location.pathname;
+    let currentPage = path.split('/').pop();
+    if (!currentPage || !currentPage.includes('.html')) {
+        currentPage = 'index.html';
+    }
 
     // Global Component Management (Navbar & Footer)
     const initGlobalComponents = () => {
@@ -64,7 +67,77 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                     </div>
                 </div>
+
+                <!-- Global Liability Waiver Modal -->
+                <div class="modal fade" id="liabilityModal" tabindex="-1" aria-labelledby="liabilityModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content bg-primary-bg border-0 rounded-5 shadow-2xl overflow-hidden">
+                            <div class="modal-header border-0 p-4 pb-0">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body p-4 p-md-5 pt-0">
+                                <div class="text-center mb-4">
+                                    <i class="bi bi-shield-lock-fill fs-1 text-saddle-brown"></i>
+                                    <h2 class="western-font mt-3 h1">Safety Agreement</h2>
+                                    <p class="text-muted small">Please review and sign the WildWest Ranch waiver.</p>
+                                </div>
+                                
+                                <div class="bg-secondary-bg p-4 rounded-4 border mb-4" style="height: 300px; overflow-y: scroll; font-size: 0.9rem;">
+                                    <h5 class="western-font mb-4">WILDWEST RANCH GUEST WAIVER</h5>
+                                    <p><strong>1. INHERENT RISKS:</strong> I acknowledge that horseback riding and ranch activities involve inherent risks, including but not limited to, unpredictable animal behavior, uneven terrain, and environmental hazards.</p>
+                                    <p><strong>2. RESPONSIBILITY:</strong> I agree to follow all instructions provided by WildWest Ranch wranglers and staff at all times. I understand that failure to follow safety protocols may result in immediate termination of activities without refund.</p>
+                                    <p><strong>3. RELEASE:</strong> I hereby release, waive, and discharge WildWest Ranch, its owners, and employees from any and all liability for personal injury, property damage, or wrongful death caused by participation in ranch activities.</p>
+                                    <p><strong>4. MEDICAL CONSENT:</strong> In the event of an emergency, I authorize WildWest Ranch staff to seek medical treatment on my behalf.</p>
+                                    <p><strong>5. PHOTO RELEASE:</strong> I grant WildWest Ranch permission to use photographs or videos taken during my stay for promotional purposes, unless otherwise specified in writing.</p>
+                                    <hr class="opacity-10">
+                                    <p class="x-small text-muted">This agreement is governed by the laws of the State of Montana. By signing below, you acknowledge that you have read and understood all terms.</p>
+                                </div>
+                                
+                                <form class="bg-secondary-bg p-4 rounded-4 border">
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label x-small fw-bold text-uppercase">Full Legal Name</label>
+                                            <input type="text" class="form-control form-control-lg rounded-3 fs-6" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label x-small fw-bold text-uppercase">Date of Birth</label>
+                                            <input type="date" class="form-control form-control-lg rounded-3 fs-6" required>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label x-small fw-bold text-uppercase">Digital Signature</label>
+                                            <input type="text" class="form-control form-control-lg rounded-3 western-font fs-3" placeholder="Type Full Name" required>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" required id="modal-confirm">
+                                                <label class="form-check-label x-small text-muted" for="modal-confirm">
+                                                    I certify that I am at least 18 years of age and signing of my own free will.
+                                                </label>
+                                            </div>
+                                        </div>
+                                         <div class="col-12 mt-4 text-center">
+                                             <button type="submit" class="btn-ranch btn-primary-ranch btn-fixed-width py-3">Submit & Close</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             `;
+
+            // Handle Global Liability Modal
+            const liabilityLinks = document.querySelectorAll('a[href="liability-form.html"]');
+            const liabilityModalEl = document.getElementById('liabilityModal');
+            if (liabilityModalEl) {
+                liabilityLinks.forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const modal = new bootstrap.Modal(liabilityModalEl);
+                        modal.show();
+                    });
+                });
+            }
         }
 
         // 2. Standardize Navbar
@@ -91,8 +164,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     <button class="btn btn-outline-ranch p-2 rounded-circle rtl-toggle d-none d-lg-flex" title="Toggle RTL">
                         <i class="bi bi-arrow-left-right"></i>
                     </button>
-                    <a href="booking.html" class="btn-ranch btn-outline-ranch d-none d-md-flex">Book Now</a>
-                    <a href="login.html" class="btn-ranch btn-primary-ranch d-none d-md-flex">Login</a>
+                    <a href="booking.html" class="btn-ranch btn-outline-ranch d-none d-lg-flex">Book Now</a>
+                    <a href="login.html" class="btn-ranch btn-primary-ranch d-none d-lg-flex">Login</a>
                     <button class="mobile-nav-btn"><i class="bi bi-list"></i></button>
                 </div>
             `;

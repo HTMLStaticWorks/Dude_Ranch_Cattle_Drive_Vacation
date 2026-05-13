@@ -112,3 +112,33 @@
 [data-theme="dark"] .form-control::placeholder {
     color: rgba(255, 255, 255, 0.4);
 }
+
+[data-theme="dark"] .icon-circle {
+    background-color: var(--secondary-bg) !important;
+    border-color: var(--border-color) !important;
+}
+
+/* Modal Dark Mode */
+[data-theme="dark"] .modal-content {
+    background-color: var(--primary-bg) !important;
+    border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .modal-content .bg-secondary-bg,
+[data-theme="dark"] .modal-content .bg-white {
+    background-color: var(--secondary-bg) !important;
+}
+
+[data-theme="dark"] .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+[data-theme="dark"] .modal-content .form-control {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: var(--border-color);
+    color: var(--text-main);
+}
+
+[data-theme="dark"] .modal-content .text-muted {
+    color: var(--text-muted) !important;
+}
