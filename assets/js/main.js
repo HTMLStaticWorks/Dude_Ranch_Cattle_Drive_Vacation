@@ -20,9 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="container-custom">
                     <div class="footer-top">
                         <div>
-                            <div class="footer-logo western-font">
-                                <i class="bi bi-compass"></i> WildWest Ranch
-                            </div>
+                            <a href="index.html" class="footer-logo western-font" style="text-decoration:none;cursor:pointer;">
+                                <i class="bi bi-compass"></i>
+                                <span>WildWest Ranch</span>
+                            </a>
                             <p class="footer-desc">Authentic western luxury since 1892. Preserving the heritage of the American West through immersive ranch experiences.</p>
                             <div class="social-links mt-4">
                                 <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
@@ -144,10 +145,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const nav = document.querySelector('.navbar-custom');
         if (nav) {
             nav.innerHTML = `
-                <div class="nav-logo">
+                <a href="index.html" class="nav-logo" style="text-decoration:none;cursor:pointer;">
                     <i class="bi bi-compass"></i>
                     <span>WildWest Ranch</span>
-                </div>
+                </a>
                 <ul class="nav-links">
                     <li><a href="index.html" class="nav-link ${currentPage === 'index.html' ? 'active' : ''}">Home</a></li>
                     <li><a href="home-2.html" class="nav-link ${currentPage === 'home-2.html' ? 'active' : ''}">Home 2</a></li>

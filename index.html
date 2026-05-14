@@ -54,10 +54,10 @@
     <!-- Hero Section -->
     <header class="hero">
         <div class="hero-bg">
-            <img src="https://images.unsplash.com/photo-1518467166778-b88f373ffec7?auto=format&fit=crop&q=80&w=2000" alt="Western Ranch Sunset">
+            <img src="assets/img/hero-bg.png" alt="Western Ranch Sunset">
         </div>
         <div class="hero-overlay"></div>
-        <div class="dust-overlay"></div>
+
         
         <div class="hero-content container">
             <span class="hero-sub">Est. 1892 • Premium Western Heritage</span>
@@ -149,21 +149,23 @@
                     <h2 class="section-title">Horseback Riding Experiences</h2>
                     <p class="mt-4 lead serif-italic">"The air of heaven is that which blows between a horse's ears."</p>
                     <p class="mt-3 text-muted">Our stables house over 150 well-trained horses, matched to your skill level. From gentle meadow walks to challenging ridge climbs, our guided trail rides offer a perspective of the wilderness that only a saddle can provide.</p>
-                    <ul class="mt-4 list-unstyled">
-                        <li class="mb-3 d-flex align-items-center justify-content-center justify-content-lg-start gap-3">
-                            <i class="bi bi-check2-circle text-success fs-4"></i>
-                            <span>Sunset Prairie Rides & Campfire Coffee</span>
-                        </li>
-                        <li class="mb-3 d-flex align-items-center justify-content-center justify-content-lg-start gap-3">
-                            <i class="bi bi-check2-circle text-success fs-4"></i>
-                            <span>Advanced Creek Crossing & Trail Mastery</span>
-                        </li>
-                        <li class="mb-3 d-flex align-items-center justify-content-center justify-content-lg-start gap-3">
-                            <i class="bi bi-check2-circle text-success fs-4"></i>
-                            <span>Private Guide Sessions for Experienced Riders</span>
-                        </li>
-                    </ul>
-                    <a href="ranch-experiences.html" class="btn-ranch btn-primary-ranch mt-4">Explore Experiences</a>
+                    <div class="d-flex flex-column align-items-center align-items-lg-start">
+                        <ul class="mt-4 list-unstyled" style="text-align:left;">
+                            <li class="mb-3 d-flex align-items-start justify-content-start gap-3">
+                                <i class="bi bi-check2-circle text-success fs-4 flex-shrink-0"></i>
+                                <span>Sunset Prairie Rides &amp; Campfire Coffee</span>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start justify-content-start gap-3">
+                                <i class="bi bi-check2-circle text-success fs-4 flex-shrink-0"></i>
+                                <span>Advanced Creek Crossing &amp; Trail Mastery</span>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start justify-content-start gap-3">
+                                <i class="bi bi-check2-circle text-success fs-4 flex-shrink-0"></i>
+                                <span>Private Guide Sessions for Experienced Riders</span>
+                            </li>
+                        </ul>
+                        <a href="ranch-experiences.html" class="btn-ranch btn-primary-ranch mt-2">Explore Experiences</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -291,9 +293,10 @@
         <div class="container-custom">
             <div class="footer-top">
                 <div>
-                    <div class="footer-logo western-font">
-                        <i class="bi bi-compass"></i> WildWest Ranch
-                    </div>
+                    <a href="index.html" class="footer-logo western-font" style="text-decoration:none;cursor:pointer;">
+                        <i class="bi bi-compass"></i>
+                        <span>WildWest Ranch</span>
+                    </a>
                     <p class="footer-desc">Authentic western luxury since 1892. Preserving the heritage of the American West through immersive ranch experiences.</p>
                     <div class="social-links mt-4">
                         <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
