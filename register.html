@@ -22,11 +22,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: radial-gradient(circle at center, #f6efe4 0%, #e8dcc4 100%);
             padding: 50px 20px;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1534067783941-51c9c239dc3a?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
         .register-card {
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(246, 239, 228, 0.85);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             border-radius: 30px;
@@ -103,7 +106,8 @@
 
         /* Dark Mode Overrides */
         [data-theme="dark"] body {
-            background: radial-gradient(circle at center, #2f241d 0%, #1a1410 100%);
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1534067783941-51c9c239dc3a?auto=format&fit=crop&q=80&w=2000');
+            background-attachment: fixed;
         }
         [data-theme="dark"] .register-card {
             background: rgba(47, 36, 29, 0.9);
@@ -154,10 +158,10 @@
 <body>
 
     <div class="auth-toggles">
-        <button id="theme-toggle" class="btn btn-outline-ranch p-2 rounded-circle" title="Toggle Theme">
+        <button id="theme-toggle" class="btn btn-outline-light p-2 rounded-circle theme-toggle" title="Toggle Theme">
             <i class="bi bi-moon-stars"></i>
         </button>
-        <button id="rtl-toggle" class="btn btn-outline-ranch p-2 rounded-circle" title="Toggle RTL">
+        <button id="rtl-toggle" class="btn btn-outline-light p-2 rounded-circle rtl-toggle" title="Toggle RTL">
             <i class="bi bi-arrow-left-right"></i>
         </button>
     </div>
