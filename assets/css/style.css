@@ -567,13 +567,14 @@ footer {
 
 @media (max-width: 992px) {
     .footer-top { grid-template-columns: 1fr 1fr; }
+    .footer-bottom { flex-direction: column; gap: 15px; text-align: center; }
+    .footer-bottom .d-flex { justify-content: center; flex-wrap: wrap; }
 }
 
 @media (max-width: 576px) {
     .footer-top { grid-template-columns: 1fr; text-align: center; }
     .footer-desc { margin: 0 auto 20px; }
     .social-links { justify-content: center; }
-    .footer-bottom { flex-direction: column; gap: 20px; }
 }
 
 /* Mobile Menu */
