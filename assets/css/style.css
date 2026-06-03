@@ -6,9 +6,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
-    --primary-bg: #f6efe4;
-    --secondary-bg: #eadcc6;
-    --card-bg: #fffaf3;
+    --primary-bg: #ffffff;
+    --secondary-bg: #f8f6f3;
+    --card-bg: #ffffff;
     --saddle-brown: #8b5a3c;
     --burnt-sienna: #b86b43;
     --dusty-clay: #c68a5d;
@@ -17,10 +17,14 @@
     --text-main: #2f241d;
     --text-muted: #6d5b4e;
     --border-color: rgba(139, 90, 60, 0.12);
-    --glass-bg: rgba(246, 239, 228, 0.7);
+    --glass-bg: rgba(255, 255, 255, 0.85);
     --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     --shadow: 0 10px 30px rgba(47, 36, 29, 0.05);
 }
+
+.bg-primary-bg { background-color: var(--primary-bg) !important; }
+.bg-secondary-bg { background-color: var(--secondary-bg) !important; }
+.bg-card-bg { background-color: var(--card-bg) !important; }
 
 .bg-burnt-sienna { background-color: var(--burnt-sienna) !important; color: #fff !important; }
 .bg-saddle-brown { background-color: var(--saddle-brown) !important; color: #fff !important; }
@@ -208,6 +212,26 @@ img {
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+.nav-actions .btn-ranch {
+    height: 44px;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+}
+
+.nav-actions .rounded-circle,
+.auth-toggles .rounded-circle {
+    width: 42px;
+    height: 42px;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
 }
 
 /* Buttons */

@@ -7,21 +7,6 @@
     text-align: right;
 }
 
-[dir="rtl"] .navbar-custom {
-    flex-direction: row-reverse;
-}
-
-[dir="rtl"] .nav-links {
-    flex-direction: row-reverse;
-}
-
-[dir="rtl"] .nav-actions {
-    flex-direction: row-reverse;
-}
-
-[dir="rtl"] .hero-btns {
-    flex-direction: row-reverse;
-}
 
 [dir="rtl"] .footer-top {
     text-align: right;
@@ -48,4 +33,54 @@
 [dir="rtl"] .mobile-menu.active {
     right: auto;
     left: 0;
+}
+
+/* Experiences Page - Mastery Section RTL Fix */
+[dir="rtl"] .float-1 {
+    right: auto;
+    left: 15%;
+}
+
+[dir="rtl"] .float-2 {
+    right: auto;
+    left: 5%;
+}
+
+@media (min-width: 993px) and (max-width: 1024px) {
+    [dir="rtl"] .float-1 {
+        right: auto;
+        left: -2%;
+    }
+}
+
+@media (max-width: 767px) {
+    [dir="rtl"] .float-1 {
+        right: auto;
+        left: -2%;
+    }
+    [dir="rtl"] .float-2 {
+        right: auto;
+        left: 5%;
+    }
+}
+
+[dir="rtl"] .mastery-text {
+    text-align: right !important;
+}
+
+/* Global Bootstrap Alignment RTL Overrides */
+[dir="rtl"] .text-start,
+[dir="rtl"] .text-sm-start,
+[dir="rtl"] .text-md-start,
+[dir="rtl"] .text-lg-start,
+[dir="rtl"] .text-xl-start {
+    text-align: right !important;
+}
+
+[dir="rtl"] .text-end,
+[dir="rtl"] .text-sm-end,
+[dir="rtl"] .text-md-end,
+[dir="rtl"] .text-lg-end,
+[dir="rtl"] .text-xl-end {
+    text-align: left !important;
 }

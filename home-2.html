@@ -41,12 +41,16 @@
             flex: 1.2;
             position: relative;
             overflow: hidden;
-            border-radius: 40px 0 0 40px;
+            border-radius: 30px;
+            margin: 40px 40px 40px 0;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.18);
         }
         .hero-img-side img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: center;
+            display: block;
         }
         
         .asymmetric-section {
@@ -78,11 +82,12 @@
             overflow: hidden;
         }
         
-        @media (max-width: 992px) {
+        @media (max-width: 1024px) {
             .editorial-hero { height: auto; padding-top: 150px; }
             .hero-split { flex-direction: column; }
-            .hero-text-side { padding: 40px; }
-            .hero-img-side { height: 400px; border-radius: 0; }
+            .hero-text-side { padding: 40px; text-align: center !important; align-items: center !important; }
+            .hero-text-side .d-flex { justify-content: center !important; }
+            .hero-img-side { height: 400px; border-radius: 20px; margin: 0 20px 40px 20px; }
             .layer-img-group { height: 450px; margin-bottom: 40px; }
         }
     </style>
@@ -136,6 +141,25 @@
             </div>
         </div>
     </header>
+
+    <!-- Introduction: The Philosophy -->
+    <section class="section-padding text-center text-lg-start" style="background: var(--secondary-bg);">
+        <div class="container-custom">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <span class="section-tag">Our Philosophy</span>
+                    <h2 class="section-title mb-4">Rewilding the Soul</h2>
+                    <p class="lead text-muted mb-4">We believe that luxury doesn't mean isolation from nature; it means experiencing nature at its absolute finest. Our ranch was founded on the principle that there is a profound elegance in rugged, authentic wilderness.</p>
+                    <p class="text-muted mb-4">Whether you are riding alongside generational cowboys, learning the intricate art of roping, or simply breathing in the crisp mountain air from your cabin's deck, every moment here is curated to connect you deeply with the untamed frontier.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="overflow-hidden rounded-5 shadow-lg w-100" style="height: 450px;">
+                        <img src="assets/img/ranch_philosophy.png" alt="Cowboy Looking at Valley" class="w-100 h-100" style="object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Section 1: Cattle Drive Journey -->
     <section class="asymmetric-section">
@@ -202,7 +226,7 @@
             </div>
             <div class="row g-4 justify-content-center">
                 <div class="col-lg-4 col-md-6">
-                    <div class="ranch-card border-0 bg-transparent text-center">
+                    <div class="ranch-card text-center p-4">
                         <div class="mb-4 overflow-hidden rounded-circle mx-auto shadow-lg" style="width: 250px; height: 250px;">
                             <img src="https://media.istockphoto.com/id/543565700/photo/little-archer-with-bow-and-arrow.jpg?s=612x612&w=0&k=20&c=zSQu1qUsGjlQ0qxE-DRp6RBPgbG0DdwnDSLvXsx-abw=" alt="Archery" class="w-100 h-100">
                         </div>
@@ -211,7 +235,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="ranch-card border-0 bg-transparent text-center">
+                    <div class="ranch-card text-center p-4">
                         <div class="mb-4 overflow-hidden rounded-circle mx-auto shadow-lg" style="width: 250px; height: 250px;">
                             <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&q=80&w=600" alt="Fishing" class="w-100 h-100">
                         </div>
@@ -220,7 +244,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="ranch-card border-0 bg-transparent text-center">
+                    <div class="ranch-card text-center p-4">
                         <div class="mb-4 overflow-hidden rounded-circle mx-auto shadow-lg" style="width: 250px; height: 250px;">
                             <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80&w=600" alt="Lasso" class="w-100 h-100">
                         </div>
@@ -263,14 +287,47 @@
         </div>
     </section>
 
-    <!-- Section 5: Wilderness Adventure Testimonials -->
+    <!-- Section 5: Wilderness Culinary Journey -->
     <section class="section-padding">
         <div class="container-custom">
-            <div class="bg-dark text-white p-5 p-lg-10 rounded-5 text-center position-relative overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=2000" alt="Stars" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover opacity-25">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="ranch-card p-0 overflow-hidden border-0 shadow-lg" style="height: 500px;">
+                        <img src="assets/img/chuckwagon_dining.png" alt="Chuckwagon Dining" class="w-100 h-100" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class="pe-lg-5 d-flex flex-column align-items-center align-items-lg-start">
+                        <span class="section-tag">Authentic Tastes</span>
+                        <h2 class="section-title mb-4">Chuckwagon Dining</h2>
+                        <p class="lead text-muted mb-4">Experience the true flavor of the West. From slow-roasted prime rib under the stars to cast-iron breakfasts at dawn, our meals are an event unto themselves, prepared fresh using local Montana ingredients.</p>
+                        
+                        <div class="row g-4 mb-5 text-start w-100">
+                            <div class="col-sm-6">
+                                <h5 class="western-font mb-2"><i class="bi bi-fire text-burnt-sienna me-2"></i> Campfire Feasts</h5>
+                                <p class="small text-muted mb-0">Open-flame cooking with authentic cast iron.</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <h5 class="western-font mb-2"><i class="bi bi-cup-hot text-saddle-brown me-2"></i> Cowboy Coffee</h5>
+                                <p class="small text-muted mb-0">Brewed strong and served fresh every sunrise.</p>
+                            </div>
+                        </div>
+                        
+                        <a href="meal-plans.html" class="btn-ranch btn-outline-ranch">Explore Meal Plans</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Wilderness Adventure Testimonials -->
+    <section class="section-padding">
+        <div class="container-custom">
+            <div class="p-5 p-lg-10 rounded-5 text-center position-relative overflow-hidden" style="background: var(--secondary-bg);">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=2000" alt="Stars" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover opacity-10">
                 <div class="position-relative z-1">
-                    <span class="section-tag" style="color: var(--sunset-gold);">Voice of the Wild</span>
-                    <h2 class="section-title text-white mb-5">Unforgettable Moments</h2>
+                    <span class="section-tag">Voice of the Wild</span>
+                    <h2 class="section-title mb-5">Unforgettable Moments</h2>
                     <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
