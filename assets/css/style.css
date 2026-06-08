@@ -418,9 +418,17 @@ img {
     flex-direction: column;
 }
 
-.card-content .btn-ranch {
-    margin-top: auto;
-    align-self: center;
+.card-content .card-actions {
+    margin-top: auto !important;
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+.card-content .card-actions .btn-ranch {
+    flex: 1;
+    justify-content: center;
+    text-align: center;
 }
 
 .card-meta {
